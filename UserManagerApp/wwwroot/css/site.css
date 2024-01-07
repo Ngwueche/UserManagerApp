@@ -21,29 +21,57 @@ body {
   margin-bottom: 60px;
   background-color: #eeeeee
 }
+a{
+    text-decoration:none;
+}
 
 /*My CSS classes*/
 
 .card_panel{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .card{
     border: 1px solid grey;
     border-radius: 15px;
-    width: 300px;
+    width: 330px;
     margin: 20px;
     box-sizing: border-box;
     background-color: whitesmoke;
 }
 .card_desc{
-    padding: 20px;
+    padding: 10px;
 }
 .card_img_box{
+    /*margin: 20px;*/
     width:100%;
+   /* border-radius:50%;
+    border: 1px solid blue;*/
     height:300px;
     overflow:hidden;
+    
 }
 .card_img_box img{
     width:100%;
+}
+.socials{
+    display: flex;
+    gap: 5px;
+    flex-direction:column;
+    /*justify-content: start;*/
+    align-items:center;
+}
+.social img{
+    width: 20px;
+    height: 20px;
+}
+.social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.socials_text{
+    color: dimgrey;
+    font-size:10px;
 }
