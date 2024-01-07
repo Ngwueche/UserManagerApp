@@ -12,4 +12,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UserManagerApp.Data\UserManagerApp.Data.csproj" />
+    <ProjectReference Include="..\UserManagerApp.Models\UserManagerApp.Models.csproj" />
+    <ProjectReference Include="..\UserManagerApp.Utilities\UserManagerApp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
