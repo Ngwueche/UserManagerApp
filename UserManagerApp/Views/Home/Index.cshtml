@@ -1,20 +1,37 @@
-﻿@{
+﻿@model List<UserToReturnVM>
+
+@{
     ViewData["Title"] = "Home Page";
 }
-<partial name="_NavBarPartial"/>
+<partial name="_NavBarPartial" />
 
 <div class="container">
     <main role="main" class="pb-3">
         <div class="card_panel">
-            <div class="card">
-                <div class="card_img_box">
-                    <img src=""/>
-                </div>
-                <div class="card_desc">
-                    <p class="" asp-for="">name</p>
-                    <p class="" asp-for="">email</p>
-                </div>
-            </div>
+            @foreach (var user in Model)
+            {
+                <a href="#">
+                    <div class="card">
+                        <div class="card_img_box">
+                            <img src="@user.ImageUrl" />
+                        </div>
+                        <div class="card_desc">
+                            <p class="" asp-for="">@user.FirstName @user.LastName</p>
+                            <p class="" asp-for="">@user.Email</p>
+                            <div class="socials">
+                                <div class="social">
+                                    <img />
+                                    <p class="socials_text" asp-for="">@user.Twitter</p>
+                                </div>
+                                <div class="social">
+                                    <img />
+                                    <p class="socials_text" asp-for="">@user.GitHub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            }
         </div>
     </main>
 </div>
