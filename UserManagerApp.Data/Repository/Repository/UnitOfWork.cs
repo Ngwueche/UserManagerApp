@@ -12,8 +12,6 @@ namespace UserManagerApp.Data.Repository.Repository
             _context = context;
             ApplicationUserRepo = new ApplicationUserRepo(context);
         }
-
-
         public void Save()
         {
             _context.SaveChanges();
