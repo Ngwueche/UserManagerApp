@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagerApp", "UserManag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagerApp.Data", "UserManagerApp.Data\UserManagerApp.Data.csproj", "{31635826-A931-40CE-9E71-539F6ACE637A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagerApp.Utilities", "UserManagerApp.Utilities\UserManagerApp.Utilities.csproj", "{75D47882-1AFA-46F0-8368-907487F16D62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagerApp.Utilities", "UserManagerApp.Utilities\UserManagerApp.Utilities.csproj", "{75D47882-1AFA-46F0-8368-907487F16D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagerApp.Models", "UserManagerApp.Models\UserManagerApp.Models.csproj", "{0D76D724-6465-4D08-ACD6-AD428348F6D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagerApp.Models", "UserManagerApp.Models\UserManagerApp.Models.csproj", "{0D76D724-6465-4D08-ACD6-AD428348F6D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
