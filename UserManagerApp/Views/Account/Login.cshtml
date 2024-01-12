@@ -1,4 +1,5 @@
-﻿@model UserToRegisterVM
+﻿@model UserToLoginVM
+
 
 <div class="container">
     <main role="main" class="pb-3">
@@ -10,20 +11,20 @@
                         <p class=" " style=" background-color: red;display:flex; flex-direction: row;">
                             <i class="bi bi-arrow-left-circle text-white"></i>
                             <a asp-controller="Home" asp-action="Index" style="cursor:pointer; position:absolute; text-decoration:none;background:grey ;padding: 2px 4px; border-radius:5px; color: white;right: 2px; top:auto " class="fw-bolder">Home</a>
-                       </p>
+                        </p>
                     </div>
                 </div>
                 <div asp-validation-summary="All"></div>
-                <form method="post" asp-action="Register" asp-controller="Account">
-                    <p class=""><input asp-for="FirstName" placeholder="First Name" /></p>
-                    <p><input asp-for="LastName" placeholder="Last Name" /></p>
+                <form method="post" asp-action="Login" asp-controller="Account">
                     <p><input asp-for="Email" placeholder="Email" /></p>
-                    <p><input asp-for="PhoneNumber" placeholder="Phone Number" /></p>
                     <p><input asp-for="Password" placeholder="Password" /></p>
-                    <p><input asp-for="ConfirmPassword" placeholder="Confirm Password" /></p>
+                    <div class="flex-btw" style="height: 50px">
+                        <div><input asp-for="RememberMe"/>Remember Me</div>
+                        <div><a asp-for="">Forgot Password?</a></div>
+                    </div>
                     <button class="btn btn-primary text-center w-100 fw-bold" type="submit">Submit</button>
                 </form>
-                <p class="text-center">Already have an account? <span><a class="fw-bold" asp-action="Login" asp-controller="Account">Login Here</a></span></p>
+                    <p class="text-center">Don't have an account? <span><a class="fw-bold" asp-action="Register" asp-controller="Account">Register Here</a></span></p>
             </div>
         </div>
     </main>
