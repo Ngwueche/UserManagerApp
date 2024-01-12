@@ -22,7 +22,7 @@ namespace UserManagerApp.Models.ViewModels
         [DataType(DataType.Password)]
         [Display(Name = "Confirm Password")]
         [Compare("Password")]
-        public string PasswordConfirmed { get; set; } = string.Empty;
+        public string ConfirmPassword { get; set; } = string.Empty;
         [Required]
         public string PhoneNumber { get; set; } = string.Empty;
     }

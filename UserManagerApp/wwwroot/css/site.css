@@ -97,6 +97,31 @@ a{
 .drawer-content-area {
     margin-left: 250px;
 }
-/*drawer-content-area-inner{
-    margin-left: 260px;
-}*/
+/*Auth styles*/
+.auth-panel{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-panel-inner{
+    width: 400px;
+    min-width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+.auth-panel-inner form p input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}.auth-panel-inner form button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
