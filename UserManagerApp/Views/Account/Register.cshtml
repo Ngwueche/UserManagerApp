@@ -4,7 +4,15 @@
     <main role="main" class="pb-3">
         <div class="auth-panel">
             <div class="auth-panel-inner">
-                <h2 class="text-center fw-bolder">Register</h2>
+                <div style="position:relative; height: 80px; width:auto">
+                    <h2 class=" text-center fw-bolder">Register</h2>
+                    <div style="position:absolute; right: 2px; top:auto">
+                        <p class=" " style=" background-color: red;display:flex; flex-direction: row;">
+                            <i class="bi bi-arrow-left-circle text-white"></i>
+                            <a asp-controller="Home" asp-action="Index" style="cursor:pointer; position:absolute; text-decoration:none;background:grey ;padding: 2px 4px; border-radius:5px; color: white;right: 2px; top:auto " class="fw-bolder">Home</a>
+                       </p>
+                    </div>
+                </div>
                 <div asp-validation-summary="All"></div>
                 <form method="post" asp-action="Register" asp-controller="Account">
                     <p class=""><input asp-for="FirstName" placeholder="First Name" /></p>
@@ -14,8 +22,8 @@
                     <p><input asp-for="Password" placeholder="Password" /></p>
                     <p><input asp-for="ConfirmPassword" placeholder="Confirm Password" /></p>
                     <button class="btn btn-primary text-center w-100 fw-bold" type="submit">Submit</button>
-                    <p class="text-center">Already have an account? <span><a class="fw-bold" asp-action="Login" asp-controller="Account">Login Here</a></span></p>
                 </form>
+                <p class="text-center">Already have an account? <span><a class="fw-bold" asp-action="Login" asp-controller="Account">Login Here</a></span></p>
             </div>
         </div>
     </main>

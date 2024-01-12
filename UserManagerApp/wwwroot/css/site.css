@@ -97,6 +97,12 @@ a{
 .drawer-content-area {
     margin-left: 250px;
 }
+.my-btn{
+    text-decoration:none;
+    background-color: grey;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
 /*Auth styles*/
 .auth-panel{
     display:flex;
@@ -124,4 +130,9 @@ a{
     padding: 10px;
     border: 1px solid #dddddd;
     border-radius: 10px;
+}
+.flex-btw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
